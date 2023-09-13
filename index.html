@@ -1,0 +1,286 @@
+<!--
+   Final Project for Web Development
+    
+    Peoples Jewellers Company 
+    Author: Mohammad Bigdelu
+    Date:   11/12/2022
+
+    Filename: Index.html
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This fulfills requirement 1.1.5)-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Peoples</title>
+  </head>
+
+  <script src="./index.js"></script>
+
+  <body>
+    <header class="header" id="header">
+      <strong class="main-logo"
+        ><a href="#"
+          ><!-- This fulfills requirement 1.1.2)--><img
+            class="logo-img"
+            src="./images/Peoples-logo.webp"
+            alt="" /></a
+      ></strong>
+      <div class="main-nav-holder">
+        <nav class="main-nav">
+          <ul class="main-nav-holder">
+            <li class="menu-item"><a href="">DIAMONDS</a></li>
+            <li
+              class="menu-item dropbox"
+              id="dropbox"
+              onmouseover="dropdownHover()"
+              onmouseleave="dropdownUnHover()"
+            >
+              <a href=""
+                ><div class="drop-item" id="drop-item">
+                  SERVICES
+                  <!-- This fulfills requirement 1.1.1)--><img
+                    src="./images/caret-down-solid.svg"
+                    class="dropdown-icon-show"
+                    id="dropdown-icon"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="dropdown-box" id="dropdown-box">
+                <a href="#">Diamond Commitments</a
+                ><a href="#">Protection Plans</a><a href="">Repairs</a
+                ><a href="#">Inspections</a>
+              </div>
+            </li>
+            <li class="menu-item"><a href="#about-us">ABOUT US</a></li>
+          </ul>
+          <a href="./login.html" class="btn">LOGIN</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="section-hero" class="section-hero">
+      <div class="container hero">
+        <h1 class="hero-head">
+          We believe love inspires love. And the more love there is in our
+          world, the better it is for all of us
+        </h1>
+        <h6 class="hero-p">
+          We're focused on making an impact with our sustainability framework of
+          People's Three Loves: Love for All People, Love for Our Team and Love
+          for Our Planet and Products. Peoples is a purpose-driven company
+          committed to sustainability. As a company operating in countries
+          around the world, we care about the impact we make globally. Our
+          Purpose is simple: Inspiring Love. And it’s this purpose that radiates
+          in everything we do. We are advocates for positive change in the
+          world. We recognize that we carry an influential voice, and we are
+          purposeful in using it to advocate for the marginalized.
+        </h6>
+      </div>
+    </section>
+    <section id="section-gallery" class="section-gallery">
+      <div class="container">
+        <div class="gallery-head animate__animated animate__slideInUp">
+          <h1>Your Feedbacks</h1>
+        </div>
+        <div class="gallery animate__animated animate__slideInUp">
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item1"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment1">
+                I have been gifted with the most beautiful bracelet from
+                peoplesjewellers. You must go check online their jewelry is
+                fantastic for this holiday season. As a treat from you to you or
+                a present to someone you love, you are sure to spread happiness
+                with Peoples Jewellers. #sponsored #peoplesjewellers #gift
+                #jewels #holiday
+              </div>
+            </div>
+            <div class="gallery-word">Roxana Marcil</div>
+          </div>
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item2"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment2">
+                I have been gifted with the most beautiful bracelet from
+                peoplesjewellers. You must go check online their jewelry is
+                fantastic for this holiday season. As a treat from you to you or
+                a present to someone you love, you are sure to spread happiness
+                with Peoples Jewellers. #sponsored #peoplesjewellers #gift
+                #jewels #holiday
+              </div>
+            </div>
+            <div class="gallery-word">Adam Goldman</div>
+          </div>
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item3"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment3">
+                What a special experience it is to be hired for a surprise
+                engagement! 💍 Shout out to matt_henshall and kristavandenakker!
+                Happy engagement to you both! julezvan great job putting this
+                all together and making sure they had all the support in the
+                world to welcome this couple in as fiancée’s!!
+              </div>
+            </div>
+            <div class="gallery-word">James Lake</div>
+          </div>
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item4"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment4">
+                in the new holiday collection PeoplesJewellers ✨ From holiday
+                gift guides to over 50% off for Black Friday. Get in the season
+                of not just being a gem, but also giving one too 😉
+              </div>
+            </div>
+            <div class="gallery-word">Sara McGudrun</div>
+          </div>
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item5"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment5">
+                It’s the most wonderful time of the year❤️ Give the gift of
+                sparkle and shine this year to those you love! Check out Peoples
+                Jewellers for their beautiful holiday collection this season!
+              </div>
+            </div>
+            <div class="gallery-word">Dina Bigdelu</div>
+          </div>
+          <div class="gallery-box">
+            <div
+              class="gallery-item"
+              id="gallery-item6"
+              onmouseover="galleryHover()"
+              onmouseleave="galleryUnHover()"
+            >
+              <div class="gallery-comment" id="gallery-comment6">
+                Marrying a lumberjack.⛏️ Exactly four months away from our
+                wedding day. *cue the wedding planning freakout*😬 Coping
+                techniques welcome. 😂 . . . . .
+              </div>
+            </div>
+            <div class="gallery-word">Drill Spiera Nova</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us-section" id="about-us">
+      <div class="container about-us">
+        <h2>About Us</h2>
+        <div class="about-us-p">
+          <pre>
+          Peoples Jewellers is the largest retailer of fine jewellery in Canada, 
+          with nearly 100 locations from the Maritimes to British Columbia. 
+          As a mall-based retailer in prime locations,Peoples provides an 
+          accessible and comfortable shopping experience for its Canadian consumers. 
+          With its strong assortment of affordable fine jewellery and brand‐name 
+          watches, Peoples Jewellers provides selections for every occasion and
+          every customer.
+          
+          Founded in 1919 as a family business, Peoples Jewellers was the first company
+          in Canada to sell jewellery on a time payment plan. From this modest beginning,
+          the company grew to a national business, and by 1957 was the largest credit
+          jeweller in the British Commonwealth. Today, Peoples Jewellers continues to
+          offer its customer a wide variety of credit programs.
+            
+          Peoples Jewellers has also become known as "the diamond store" for
+          Canadian consumers. Focused on providing choices to customers who
+          seek excellent value in fine jewellery, Peoples designs much of its
+          jewellery. 
+            
+          Peoples always offers the latest trends in fine jewellery including
+          styles from top designers like Vera Wang and Adrianna Papell.
+          Everyday offerings include the newest styles in watches
+          for both men and women. Our expanded online assortment, offers
+          stylish looks for anyone and everyone. These designs are available
+          exclusively online, and allows guests to shop in the comfort of
+          their own home any time, day or night.
+            
+          Peoples Jewellers is a proud member of the Canadian Jewellers Association.</pre
+          >
+        </div>
+      </div>
+    </section>
+    <section class="bottom-hero">
+      <div class="bHero">
+        <h5 class="bHero-p">Shine Bright Like A Diamond</h5>
+        <h2 class="bHero-head">With Us</h2>
+      </div>
+    </section>
+    <!-- This fulfills requirement 1.1.6)-->
+    <footer>
+      <div class="footer">
+        <div class="footer-links">
+          <div class="footer-links-box">
+            <h3 class="footer-links-head">Sister Companies</h3>
+            <a href="#" class="footer-link">Kay</a>
+            <a href="#" class="footer-link">Jay</a>
+            <a href="#" class="footer-link">Mappins</a>
+            <a href="#" class="footer-link">Signet</a>
+          </div>
+          <div class="footer-links-box">
+            <h3 class="footer-links-head">Departments</h3>
+            <a href="#" class="footer-link">Human Resources</a>
+            <a href="#" class="footer-link">IT Support</a>
+            <a href="#" class="footer-link">Financial</a>
+            <a href="#" class="footer-link">Supply DP</a>
+          </div>
+          <div class="footer-links-box">
+            <h3 class="footer-links-head">Vendors</h3>
+            <a href="#" class="footer-link">Eric goldman</a>
+            <a href="#" class="footer-link">CDCRS</a>
+            <a href="#" class="footer-link">Time Central</a>
+            <a href="#" class="footer-link">Shernik</a>
+          </div>
+        </div>
+        <div class="footer-side">
+          <p class="footer-p">
+            We'd love to learn more about you and work together toward a
+            profitable Bussines. Please get in touch with one of our
+            Consultants. Be your local owner.
+          </p>
+          <div class="email-box">
+            <a class="email" href="mailto:si.bigdelu@gmail.com">
+              si.bigdelu@gmail.com
+            </a>
+          </div>
+          <div class="cr-box">
+            <p>Copyright 2022 Mohammad Bigdelu. All rights reserved</p>
+            <a href="">Terms and Conditions</a><a href="">Privacy Policy</a>
+            <p id="last-update">Last Update: 11/18/2022 13:25:49</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
