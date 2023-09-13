@@ -1,0 +1,554 @@
+/*
+   Final Project for Web Development
+    
+    Peoples Jewellers Company 
+    Author: Mohammad Bigdelu
+    Date:   11/12/2022
+
+    Filename: Index.css
+
+*/
+
+/* General */
+:root {
+  /* This fulfills requirement 2.1.2 */
+  --blue: #4f90c5;
+  --white: #fff;
+  --gray: #ccc;
+  --black: #0c0c0c;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: block;
+  /* This fulfills requirement 2.1.2 */
+  background-color: rgb(255, 255, 255);
+  font: size 16px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-width: 320px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--black);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 6rem auto 3rem auto;
+}
+
+@media only screen and (max-width: 1420px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+/* Button */
+
+.btn {
+  background-color: var(--black);
+  color: #fff;
+  border: 1px solid var(--black);
+  padding: 1.2rem 4rem;
+}
+
+/* Nav */
+
+.header {
+  z-index: 200;
+  top: 0;
+  left: 0;
+  display: flex;
+  position: sticky;
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 4rem 1rem 4rem;
+  max-width: 100%;
+  font-weight: 600;
+  transition: padding 0.6s;
+}
+
+/* TODO:  To make the navbar responsive*/
+@media only screen and (max-width: 1080px) {
+}
+
+.header-scrolled {
+  position: sticky;
+  padding: 0rem 4rem;
+
+  box-shadow: 0px 5px 6px 0px /* This fulfills requirement 2.1.2 */
+    rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.63);
+  margin-bottom: 1rem;
+}
+
+.main-logo {
+  width: 145px;
+  height: 30px;
+  flex-shrink: 0;
+  margin: 0 25px 0 0;
+}
+
+/* This fulfills requirement 2.1.1 */
+.main-logo a,
+.logo-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-nav-holder {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.main-nav-holder li {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 3rem 0 0;
+}
+
+/* This fulfills requirement 2.1.1 */
+.menu-item > a {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid;
+  border-color: #fff;
+  color: var(--black);
+}
+
+/* This fulfills requirement 2.1.3 */
+.menu-item a:visited {
+  text-decoration: none;
+}
+
+/* This fulfills requirement 2.1.3 */
+.menu-item > a:hover {
+  border-bottom: 2px solid;
+  border-color: var(--black);
+  padding: 0.2rem 0;
+  transition-property: border-color, padding;
+  transition: 0.4s;
+}
+
+.dropbox {
+  float: left;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.dropbox-show {
+  /* This fulfills requirement 2.1.4 */
+  background-color: var(--blue);
+  transition: background-color 0.7s;
+}
+
+.dropdown-box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-box-show {
+  visibility: visible;
+  max-width: 10.42rem;
+  background-color: var(--blue);
+  /* This fulfills requirement 2.1.6 */
+  box-shadow: 5px 30px 32px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 30px 32px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 30px 32px -1px rgba(0, 0, 0, 0.5);
+  /* This fulfills requirement 2.1.7 */
+  opacity: 1;
+  /* This fulfills requirement 2.2.1 */
+  transition: opacity 0.7s;
+}
+
+.dropdown-box > a {
+  float: none;
+  display: block;
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1 rem;
+}
+
+.dropdown-box > a:hover,
+.drop-item:hover {
+  color: var(--black);
+  transform: scale(1.1);
+  transition: color, transform 0.5s;
+}
+
+.drop-item {
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+}
+
+.drop-item-show {
+  color: var(--white);
+  transition: color 1s;
+}
+
+.dropdown-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+.dropdown-icon-show {
+  opacity: 1;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Hero */
+
+.hero-head {
+  max-width: 600px;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  word-spacing: 0.6rem;
+}
+
+.hero-p {
+  max-width: 750px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  word-spacing: 0.3rem;
+}
+
+@media only screen and (max-width: 1680px) {
+  .hero-head {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    word-spacing: 0.4;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .hero-head {
+    word-spacing: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .hero-head {
+    font-size: 2rem;
+    word-spacing: 0.1rem;
+    line-height: 2.5rem;
+  }
+
+  .hero-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    word-spacing: 0.1rem;
+  }
+}
+
+/* Gallery section */
+
+.section-gallery {
+  margin-top: 30rem;
+}
+
+.gallery-head > h1 {
+  font-size: 4rem;
+  margin-bottom: 8rem;
+}
+
+/* This fulfills requirement 2.1.5 */
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+.gallery-box {
+  margin-bottom: 2rem;
+}
+.gallery-item {
+  width: 380px;
+  height: 410px;
+  background-size: cover;
+}
+
+.gallery-word {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  word-spacing: 0.3rem;
+}
+
+.gallery-comment {
+  padding: 2rem;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  visibility: hidden;
+  color: transparent;
+}
+
+.gallery-comment-show {
+  visibility: visible;
+  transition: color 0.5s;
+}
+
+.gallery-comment-show:hover {
+  color: var(--black);
+}
+
+/* This fulfills requirement 1.1.3 */
+#gallery-item1 {
+  background: url(./images/gallery/andres-vera-202NAwjisYA-unsplash.jpg);
+  background-size: 380px 410px;
+}
+
+#gallery-item1:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+#gallery-item2 {
+  background: url(./images/gallery/jasmin-chew-WKD2vIe8Rb0-unsplash.jpg);
+  background-size: cover;
+}
+
+#gallery-item2:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+#gallery-item3 {
+  background: url(./images/gallery/kateryna-hliznitsova-ceSCZzjTReg-unsplash.jpg);
+  background-size: cover;
+}
+
+#gallery-item3:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+#gallery-item4 {
+  background: url(./images/gallery/kateryna-hliznitsova-pjrPWwwYx1I-unsplash.jpg);
+  background-size: cover;
+}
+
+#gallery-item4:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+#gallery-item5 {
+  background: url(./images/gallery/kateryna-hliznitsova-vbnxgxj6cJg-unsplash.jpg);
+  background-size: cover;
+}
+
+#gallery-item5:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+#gallery-item6 {
+  background: url(./images/gallery/nati-melnychuk-5ngCICAXiH0-unsplash.jpg);
+  background-size: 380px 410px;
+}
+
+#gallery-item6:hover {
+  background: var(--blue);
+  transition: background-color 0.3s;
+}
+
+/* About Us */
+.about-us {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.about-us > h2 {
+  margin-bottom: 3rem;
+  margin-left: -12rem;
+  font-size: 4rem;
+  word-spacing: 1.3rem;
+  text-align: center;
+}
+
+.about-us-p {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us > pre {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: left;
+}
+
+/* Bottom Hero */
+
+/* This fulfills requirement 2.1.5 */
+.bHero {
+  padding: 8rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--blue);
+}
+
+.bHero-p {
+  margin: 3rem 0;
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bHero-head {
+  margin: 0;
+  display: block;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  height: 3rem;
+  width: 240px;
+  border-bottom: 3px solid var(--black);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
+.footer-links {
+  margin-left: 10rem;
+}
+
+.footer-links-box {
+  display: inline-block;
+  margin-right: 10rem;
+}
+
+.footer-links-head {
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer-links-head:hover {
+  color: var(--white);
+  transition: color 0.5s;
+}
+
+.footer-link {
+  display: block;
+  margin: 1rem 0;
+  color: var(--white);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: var(--blue);
+  transition: color 0.5s;
+}
+
+.footer-side {
+  max-width: 300px;
+  margin-right: 10rem;
+}
+
+.footer-p {
+  color: var(--white);
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+}
+
+.email-box {
+  margin-top: 4rem;
+}
+
+.email {
+  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: white;
+  border-bottom: 2px solid var(--white);
+}
+
+.cr-box {
+  margin-top: 4rem;
+}
+
+.cr-box > p {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--gray);
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+.cr-box > a {
+  display: block;
+  color: var(--gray);
+  margin-bottom: 0.6rem;
+  opacity: 0.6;
+  font-size: 0.7rem;
+}
+
+/* Animation */

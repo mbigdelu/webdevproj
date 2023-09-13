@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="./login.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header header-scrolled" id="header">
+      <strong class="main-logo"
+        ><a href="/"
+          ><!-- This fulfills requirement 1.1.2)--><img
+            class="logo-img"
+            src="./images/Peoples-logo.webp"
+            alt="" /></a
+      ></strong>
+      <div class="main-nav-holder">
+        <nav class="main-nav">
+          <ul class="main-nav-holder">
+            <li class="menu-item"><a href="">DIAMONDS</a></li>
+            <li
+              class="menu-item dropbox"
+              id="dropbox"
+              onmouseover="dropdownHover()"
+              onmouseleave="dropdownUnHover()"
+            >
+              <a href=""
+                ><div class="drop-item" id="drop-item">
+                  SERVICES
+                  <!-- This fulfills requirement 1.1.1)--><img
+                    src="./images/caret-down-solid.svg"
+                    class="dropdown-icon-show"
+                    id="dropdown-icon"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="dropdown-box" id="dropdown-box">
+                <a href="#">Diamond Commitments</a
+                ><a href="#">Protection Plans</a><a href="">Repairs</a
+                ><a href="#">Inspections</a>
+              </div>
+            </li>
+            <li class="menu-item"><a href="#about-us">ABOUT US</a></li>
+          </ul>
+          <a href="./login.html" class="btn">LOGIN</a>
+        </nav>
+      </div>
+    </header>
+    <!-- This fulfills requirement 2.1.8)-->
+      <div class="bg-image"></div>
+
+      <div class="bg-box">
+        <div class="login-header">
+            <h1 class="login-head">Login</h1>
+        </div>
+
+        <div class="login-box"><form action="" name="login-form" onsubmit="validateForm()"><div class="input-box"> <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="john.123@gmail.com" /></div>
+        <div class="input-box"><label for="password">Password</label>
+            <input id="password" name="password" type="password" /></div>
+        <div class="input-box"> <label for="ottp">OTTP</label>
+            <input id="ottp" name="ottp" type="password" /></div><button  type="submit" class="btn login-btn">Login</button></form></div>
+
+  </body>
+</html>
